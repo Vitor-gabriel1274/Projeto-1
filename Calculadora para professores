@@ -1,0 +1,25 @@
+ct = 0
+soma= 0
+sair = 0
+media= 0
+aprovados = 0
+reprovados = 0
+
+print("digite [sair] para sair da repetição")
+while True:
+    numero = (input("digite um numero: "))
+    if numero == "sair":
+        break
+    ct = ct + 1
+    numero= float(numero)
+    soma = soma + numero
+    media = soma/ct
+    if numero >= 5:
+        aprovados += 1
+    else:
+        reprovados += 1
+if ct > 0:
+    print("\nQuantidade de alunos que fizeram a prova: ", ct)
+    print("Media da Turma: ", media)
+    print("Quantidade de alunos aprovados: ", aprovados)
+    print("Quantidade de alunos reprovados: ", reprovados)
