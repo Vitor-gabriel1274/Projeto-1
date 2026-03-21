@@ -1,0 +1,26 @@
+ct= 0
+soma= 0
+pares= 0
+numero =0
+impares= 0
+
+print("\nDigite um numero inteiro \nOu digite [sair] para parar\n")
+
+while True:
+    numero = input("Coloque o numero: ")
+    if numero == "sair":
+        break
+
+    numero = int(numero)
+
+    ct= ct + 1
+    soma += numero
+
+    if numero %2 == 0:
+        pares += 1
+    else:
+        impares += 1
+print("\nSoma dos nuúmeros: ",soma)
+print("A quantidade de Numeros digitados é igual a: ",ct)
+print("A quantidade de Numeros pares é igual a: ",pares )
+print("A quantidade de Numeros impares é igual a: ",impares)
