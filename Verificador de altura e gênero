@@ -1,0 +1,27 @@
+maior = 0
+menor= 3
+m = 0
+f = 0
+print("Digite o genero f para (feminino) ou m para (masculino) e a altura de cada um")
+while True:
+    altura = float(input("\nDigite a altura em metros: "))
+    if altura == 0:
+        break
+
+    genero = str(input("Digite o tipo de genero (m/f): "))
+
+    if altura > maior:
+        maior = altura
+    if altura < menor:
+        menor = altura
+
+    # contador
+    if genero == "f":
+        f += 1
+    if genero == "m":
+        m += 1
+
+print("\nQuantidade de homemns = ", m)
+print("Quantidade de mulheres = ", f)
+print("Maior altura = ", maior)
+print("Menor altura = ", menor)
