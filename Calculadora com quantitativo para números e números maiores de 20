@@ -1,0 +1,26 @@
+ct = 0
+soma =0
+cafe =  0
+
+print("\nCalculadora")
+
+print("\nDigite [sair] para finalizar")
+while True:
+    numero = input("Digite o número: ")
+    if numero == "sair":
+        break
+    ct = (ct + 1)
+    numero = int(numero)
+    soma = soma + numero
+    if numero >= 20:
+        cafe += 1
+
+media = soma/ct
+if ct > 0:
+    print("\nA quantidade de números maiores que 20 é igual a:", cafe)
+    print("A quantidade de números é igual a: ", ct)
+    print("A soma dos números é igual a: ", soma)
+    print("A média dos números é igual a: ", media)
+
+else:
+    print("Nenhum número digitado")
