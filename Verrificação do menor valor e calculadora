@@ -1,0 +1,23 @@
+mnr = 999999999
+ct = 0
+soma = 0
+media= 0
+print('Digite qualquer valor ou [0] para sair')
+
+while True:
+    numero = int(input("\nDigite um valor inteiro: "))
+
+    if numero == 0:
+
+        break
+    ct = ct + 1
+    soma = soma + numero
+    if numero < mnr:
+        mnr = numero
+    media = soma / ct
+
+if ct > 0:
+    print("O menor valor d igitado foi: ",mnr)
+    print("A quantidade de valores digitados foi: ",ct)
+    print("A soma dos valores digitados foi: ",soma)
+    print("A media dos valores digitados foi: ",media)
