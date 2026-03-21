@@ -1,0 +1,12 @@
+print("\nDigite 2 números inteiros para saber em ordem crescente:")
+n1 = int(input("\ndigite o primeiro numero: "))
+n2 = int(input("digite o primeiro numero: "))
+
+ordem =[n1,n2]
+if n1<n2:
+    print("O resultado em ordem crescente é:", n1,"e", n2)
+else:
+    print("O resultado em ordem crescente é:",n2,"e", n1)
+
+
+#vitinn1274
