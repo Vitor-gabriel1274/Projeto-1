@@ -1,0 +1,24 @@
+n1 = float(input("Digite o primeiro numero: ",))
+n2= float(input("Digite o segundo numero: "))
+
+if n1>n2:
+    print("\nO número", n1, 'é maior\n')
+elif n1==n2:
+    print("\n Os números são iguais\n")
+else:
+    print('\nO número', n2, 'é maior')
+
+opcao= float(input('Deseja fazer alguma operação, com eles?\n1- Sim\n2- Não\n\nDigite sua opcao: '))
+if opcao == 1:
+    p2= int(input("1 - somar +\n2 - subtrair -\n3 - multiplicar *\n4 - dividir /\n \nDigite sua opção= "))
+else:
+    print("Ok! Processo finalizado")
+
+if p2 == 1:
+    print('\nResultado', n1 + n2)
+if p2 == 2:
+    print('\nResultado', n1 - n2)
+if p2 == 3:
+    print('\nResultado', n1 * n2)
+if p2 == 4:
+    print('\nResultado', n1/n2)
