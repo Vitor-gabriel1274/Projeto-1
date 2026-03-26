@@ -1,0 +1,29 @@
+soma = 0
+qtd= 0
+media=0
+maior50 = 0
+maior2 = -999999
+menor= 9999999
+while True:
+    x = int(input("Escreva um numero ou [0] para sair da repetição: "))
+    if x == 0:
+        break
+    qtd += 1
+    soma += x
+    media = soma / qtdCa
+
+    if x >= 50:
+        maior50 += 1
+    if x < menor:
+        menor = x
+    if x > maior2:
+        maior2 = x
+
+print("\nA quantidade de valores digitados: ", qtd)
+print("A soma dos valores digitados: ", soma)
+print("A media dos valores digitados: ", media)
+print("A quantidade de valores digitados maiores que 50: ", maior50)
+
+if qtd > 0:
+    print("O maior valor digitado foi: ", maior2)
+    print("O menor valor digitado foi: ", menor)
