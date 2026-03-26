@@ -1,0 +1,40 @@
+lule = 0
+balsonaru = 0
+nikolais = 0
+nulos = 0
+brancos = 0
+total = 0
+print("\nDigite seu voto \n\n1- lule\n2- balsonaru\n3- Nikolais\n5- Nulo\n6- Voto em branco\n\n[0] pra sair da repetição: \n")
+while True:
+    voto = int(input("Digite seu voto: "))
+    if voto == 0:
+        break
+
+    if voto == 1:
+        lule += 1
+    elif voto == 2:
+        balsonaru += 1
+    elif voto == 3:
+        nikolais += 1
+    elif voto == 5:
+        nulos += 1
+    elif voto == 6:
+        brancos += 1
+
+total = lule + balsonaru + nikolais + nulos + brancos
+
+if total > 0:
+    nulosn = (nulos / total) * 100
+    brancosn = (brancos / total) * 100
+else:
+    nulosn = 0
+    brancosn = 0
+
+print("\nResultado da eleição:")
+print("Primeiro candidato:", lule)
+print("segundo candidato:", balsonaru)
+print("tereiro candidato:", nikolais)
+print("Votos nulos:", nulos)
+print("Votos em branco:", brancos)
+print("nulos: {:.2f}%".format( nulosn))
+print("brancos: {:.2f}%".format(brancosn))
