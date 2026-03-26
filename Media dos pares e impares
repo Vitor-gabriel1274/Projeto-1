@@ -1,0 +1,27 @@
+par = 0
+Qtpar = 0
+
+impar= 0
+Qtimpar= 0
+
+while True:
+    numero = int(input("Digite um numero ou [0] pra sair da repetição: "))
+    if numero == 0:
+        break
+    if numero % 2 == 0:
+        par += 1
+        Qtpar += numero
+    else:
+        impar += 1
+        Qtimpar += numero
+if par > 0:
+    media = Qtpar /  par
+else:
+    media = 0
+if impar > 0:
+    media2 =  Qtimpar / impar
+else:
+    media2 = 0
+
+print("\nMedia dos pares: ", media)
+print("Media dos impares: ", media2)
