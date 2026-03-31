@@ -1,0 +1,7 @@
+ct=0
+print("\nNúmero naturais na vertical:")
+for numero in range(0,10,1 ):
+    print(numero)
+    ct= ct+1
+print("\nEncerrou a repetição.")
+print("A quantidade de números é: ", ct)
