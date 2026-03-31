@@ -1,0 +1,7 @@
+ct=0
+print("\nNúmero naturais pares:")
+for numero in range(0,13,2 ):
+    print(numero)
+    ct= ct+1
+print("\nEncerrou a repetição.")
+print("A quantidade de números é: ", ct)
