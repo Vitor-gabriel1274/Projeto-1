@@ -1,0 +1,21 @@
+numerof=0
+numeroi =0
+
+print("Digite um numero")
+
+numeroi= int(input("\nDigite o número inicial: "))
+numerof= int(input("Digite o número final: "))
+
+for numero1 in range(numerof,numeroi+1,1):
+    print(numero1)
+    if numerof > numeroi:
+        print(numero1)
+
+for numero2 in range(numerof,numeroi-1,-1):
+    print(numero2)
+    if numeroi > numerof:
+        print(numero2)
+
+
+
+print("\nEncerrou a repetição")
